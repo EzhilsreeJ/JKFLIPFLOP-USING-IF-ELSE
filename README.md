@@ -1,4 +1,4 @@
-# JKFLIPFLOP-USING-IF-ELSE
+# EXP-7 JKFLIPFLOP-USING-IF-ELSE
 
 **AIM:** 
 
@@ -69,4 +69,5 @@ endmodule
 ![Screenshot (32)](https://github.com/user-attachments/assets/509affa3-69ba-4b83-9d78-fdd3d2ab57d1)
 
 **RESULT**
+
 Thus the given JK flipflops are designed and verified using Verilog programming
