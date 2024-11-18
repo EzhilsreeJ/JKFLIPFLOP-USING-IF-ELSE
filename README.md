@@ -33,10 +33,15 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 **Procedure**
 
  1.Open Quartus-II and create a new verilog file 
+ 
  2.Then code the program and run it 
+ 
  3.Check the RTL logic is correct
+ 
  4.set end time and insert node
- 5.Get the waveform and write the resul
+ 
+ 5.Get the waveform and write the result
+ 
 
 **PROGRAM**
 ```
