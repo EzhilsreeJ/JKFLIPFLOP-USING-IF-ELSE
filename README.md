@@ -33,12 +33,18 @@ By using three variable K-Map, we can get the simplified expression for next sta
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is Q(t+1)=JQ(t)′+K′Q(t)Q(t+1)=JQ(t)′+K′Q(t)
 
 **Procedure**
+```
+module Exp7(j, k, clk, rst,q); input j, k, clk, rst; output reg q;
 
-/* write all the steps invloved */
+always @(posedge clk or posedge rst) begin if (rst) q <= 0; // Reset the flip-flop else begin case ({j, k}) // J and K control the behavior 2'b00: q <= q; // No change 2'b01: q <= 0; // Reset 2'b10: q <= 1; // Set 2'b11: q <= ~q; // Toggle endcase end end
+
+endmodule
+```
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+Developed by: RegisterNumber:
 */
 
 **RTL LOGIC FOR FLIPFLOPS**
